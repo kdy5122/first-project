@@ -33,7 +33,7 @@ p{text-align: center;}
     }
  @media all and (max-width: 415px){
      #table-first{width:100%;}
-    }   
+     
 </style>
 </head>
 

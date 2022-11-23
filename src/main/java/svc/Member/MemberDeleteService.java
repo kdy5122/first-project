@@ -16,7 +16,7 @@ public class MemberDeleteService {
 	     int deleteOrderD=memberDAO.deleteOrderDetail(deleteId); 
 		 int deleteOrderI=memberDAO.deleteOrderItem(deleteId); 
 		
-		if( deleteCount>0 ) {
+		if( deleteCount>0 && deleteOrderD>0 && deleteOrderI>0) {
 			commit(con);
 			deleteResult=true;
 		}

@@ -28,12 +28,15 @@ public class SearchPriceAction implements Action {
 		RacketListService racketListService = new RacketListService();
 		
 		int listCount=racketListService.getListCount(prod_kind);//총 글의 개수를 반환하는 메서드 호출
+		
+		
+		
 		if(request.getParameter("line").equals("1")) {
 		listRacket = racketListService.getlowRacketList(page, limit,prod_kind);	
 		}else if(request.getParameter("line").equals("0")) {
 		listRacket = racketListService.gethightRacketList(page, limit,prod_kind);	
 		}else {
-		listRacket = racketListService.getRacketList(page,limit,prod_kind);//지정한페에지에 출력될 글목록을 반환하는 메서드 호출
+		listRacket = racketListService.getRacketList(page,limit,prod_kind);
 		}
 		
 		int maxPage=(int)((double)listCount/limit+0.95); //총 페이지 수 계산 =>총글의갯수/출력될글의 갯수에 0.95를 하면 정수올림할수있음

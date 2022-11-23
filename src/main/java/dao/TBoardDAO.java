@@ -175,7 +175,7 @@ public class TBoardDAO {
 			pstmt.setInt(9, 0);
 			pstmt.setInt(10, 0);
 
-			//★★★★★★★★★★★★★★★★★★★★★★★★★ mySQL은 빈값을 NULL이아닌 공백으로 인식하기때문에 조건문을 걸어준다. ★★★★★★★★★★★★★★★★★★★★★★
+			//★★★★★ mySQL은 빈값을 NULL이아닌 공백으로 인식하기때문에 조건문을 걸어준다. ★★★★★
 			// 받아온 경도값이 있을경우 그값을 인설트시켜주고 
 			if(!article.getTBOARD_PLACELA().equals("")) {
 			pstmt.setString(11, article.getTBOARD_PLACELA());
