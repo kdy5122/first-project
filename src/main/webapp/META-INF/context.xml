@@ -1,0 +1,41 @@
+<!-- 
+
+<Context> 
+  <Resource name="jdbc/MySQLDB" 
+   auth="Container"
+   type="javax.sql.DataSource" 
+   
+   
+   url="jdbc:mysql://localhost:3306/testDB"
+   username="java" 
+   password="java"
+   
+   driverClassName="com.mysql.cj.jdbc.Driver"
+    
+   factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+
+   maxActive="500"
+   maxWait="1000"
+   maxIdle="100"/>  
+</Context>
+ -->
+
+ 
+<Context> 
+  <Resource name="jdbc/MySQLDB" 
+   auth="Container"
+   type="javax.sql.DataSource" 
+   
+   
+   url="jdbc:mysql://118.131.179.138/ipc22bklk?serverTimezone=Asia/Seoul"
+   username="ipc22bklk" 
+   password="ipc22bklk"
+   
+   driverClassName="com.mysql.cj.jdbc.Driver"
+    
+   factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+
+   maxActive="500"
+   maxWait="1000"
+   maxIdle="100"/>  
+</Context> 

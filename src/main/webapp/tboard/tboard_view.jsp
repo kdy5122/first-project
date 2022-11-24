@@ -116,7 +116,7 @@ h4 {
 		   </td>
 		  </tr>
 		  </c:when>
-		  <c:when test="${article.TBOARD_PLACELA == 'NULL'}">
+		  <c:when test="${article.TBOARD_PLACELA == 'NULL'}"> 
 		  
 		  </c:when>		  
 		  </c:choose>
